@@ -1,0 +1,20 @@
+#accueil-container .important {
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.35057773109243695) 0%, rgba(0,0,0,0.10407913165266103) 61%), url('/brunch.jpg');
+    padding: 48px 32px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+#accueil-container .important span {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    max-width: 50%;
+}
