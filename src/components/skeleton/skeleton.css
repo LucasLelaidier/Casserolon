@@ -20,3 +20,13 @@
     font-size: 20px;
     font-weight: bold;
 }
+
+@media screen and (max-width: 900px) {
+    #container header { 
+        justify-content: center;
+    }
+    
+    #container header span {
+        display: none;
+    }
+}

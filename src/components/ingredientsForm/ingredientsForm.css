@@ -1,0 +1,37 @@
+#ingredients-form li {
+    display: flex;
+    align-items: center;
+}
+
+#ingredients-form li > *{
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 740px) {
+    #ingredients-form {
+        padding: 0px;
+    }
+}
+
+#ingredients-form input {
+    padding: 1px 8px;
+    font-family: 'Robot', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    max-width: 30%;
+}
+
+#ingredients-form input.small {
+    width: 45px;
+}
+
+#ingredients-form .add {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#ingredients-form .remove {
+    cursor: pointer;
+    height: 20px;
+}

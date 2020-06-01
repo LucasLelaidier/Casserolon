@@ -1,0 +1,140 @@
+#recette-container .important {
+    height: 170px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#recette-container.loading .important {
+    background: linear-gradient(0deg, rgba(0,0,0,0.35057773109243695) 0%, rgba(0,0,0,0.10407913165266103) 61%);
+}
+
+#recette-container.loading .loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#recette-container .important .return {
+    border-radius: 50%;
+    backdrop-filter: blur(4px) brightness(60%);
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#recette-container .important .return img {
+    height: 75%;
+}
+
+#recette-container .important .return .edit-icon {
+    height: 70%;
+}
+
+#recette-container .title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#recette-container .title-bar .time {
+    display: flex;
+    align-items: center;
+}
+
+#recette-container .title-bar .time span {
+    font-family: 'Fredoka One', cursive;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#recette-container .infos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#recette-container .infos .ingredients {
+    grid-column: 1;
+}
+
+#recette-container .infos .ingredients li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#recette-container .infos .instructions {
+    grid-column: 2 / 4;
+}
+
+@media screen and (max-width: 900px) {
+    #recette-container .infos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #recette-container .infos .instructions {
+        grid-column: 1;
+    }
+}
+
+#recette-container .infos .instructions > p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#recette-container .infos .instructions .step {
+    color: #F47321;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+}
+
+/* loader */
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #F47321;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #F47321 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
